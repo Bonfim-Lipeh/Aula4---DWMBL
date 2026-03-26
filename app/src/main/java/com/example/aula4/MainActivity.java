@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(this, "Preencha todos os campos!", Toast.LENGTH_SHORT).show();
                 }
             });
-            listViewUsuarios.setOnClickListener((parent, view, position, id)->{
+            listViewUsuarios.setOnItemClickListener((parent, view, position, id)->{
                 int userId = listaIds.get(position);
                 String nome = listaUsuarios.get(position).split(" - ")[1];
                 String email = listaUsuarios.get(position).split(" - ")[2];
